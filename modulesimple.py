@@ -1,14 +1,11 @@
 #!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import numpy as np
 import time
 import pandas as pd
 import os
-import snakeviz
 features = pd.read_csv('data/data copy/TCGA-PANCAN-HiSeq-801x20531/data.csv', index_col=0).to_numpy()
 
 
@@ -92,10 +89,6 @@ def kmeans(xs, num_clusters=4):
 
 centroids, assignments = kmeans(features, 4)  
 print(centroids, assignments)
-
-
-# In[ ]:
-
 
 
 
