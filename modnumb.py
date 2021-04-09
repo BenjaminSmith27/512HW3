@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
 
 
 import numpy as np
@@ -92,9 +88,6 @@ def kmeans(xs, num_clusters=4):
         
     return centroids, assignments
 centroids, assignments = kmeans(features, 4)  
-
-
-# In[ ]:
 
 
 
